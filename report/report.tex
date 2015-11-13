@@ -1,10 +1,10 @@
 \documentclass[12pt]{article}
 \usepackage[english]{babel}
-\usepackage[utf8x]{inputenc}
+\usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{graphicx}
 \usepackage{parskip}
-\usepackage{ucs}
+%\usepackage{ucs}
 \usepackage{float}
 \usepackage{array}
 \usepackage{amsmath}
@@ -21,6 +21,8 @@
 \usepackage{tabularx}
 \usepackage{booktabs}
 \usepackage[hidelinks]{hyperref}
+\usepackage[backend=bibtex]{biblatex}
+\addbibresource{ref.bib}
 
 \newcommand{\HRule}{\rule{\linewidth}{1mm}}
 \parskip 7.0pt
@@ -55,5 +57,8 @@ Håvard Holmboe Lian \\
 %Input sections here
 \input{sec/intro}
 \input{sec/today}
+\input{sec/requirements}
+
+\printbibliography
 
 \end{document}
