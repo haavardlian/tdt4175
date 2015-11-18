@@ -1,4 +1,4 @@
-\documentclass[12pt]{article}
+\documentclass[12pt]{scrreprt}
 \usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
@@ -22,6 +22,10 @@
 \usepackage{booktabs}
 \usepackage[hidelinks]{hyperref}
 \usepackage[backend=bibtex]{biblatex}
+\usepackage{float}
+\usepackage{color}
+\usepackage{adjustbox}
+\usepackage{tabulary}
 \addbibresource{ref.bib}
 
 \newcommand{\HRule}{\rule{\linewidth}{1mm}}
@@ -56,12 +60,19 @@ Håvard Holmboe Lian \\
 
 %Input sections here
 \input{sec/intro}
+\newpage
 \input{sec/today}
+\newpage
 \input{sec/new}
+\newpage
 \input{sec/requirements}
+\newpage
 \input{sec/discussion}
+\newpage
 \input{sec/conclusion}
-
+\newpage
+\listoffigures
+\newpage
 \printbibliography
 
 \end{document}
